@@ -30,3 +30,30 @@
 // let valAfterConversion = String(n)
 // console.log(valAfterConversion);
 // console.log(typeof valAfterConversion); // -> string
+
+// let n = 25.596
+// console.log(-n);
+
+// Arithmetic Operators: + - * / % **
+
+// let str1 = "Hello, "
+// let str2 = "world."
+
+// let str3 = str1 + str2
+// console.log(str3);
+
+// console.log("1" + 2); // -> 12
+// console.log(1 + "2"); // -> 12
+// console.log("1" + 2 + 3); // -> 123
+// console.log(3 + "2" + 1); // -> 321
+
+// console.log(+""); // -> 0
+// console.log(+"m"); // -> NaN
+// console.log(+true); // -> 1
+
+// let a, b, c;
+// a = b = c = 25.596
+
+let index = 0
+++index; index++; 
+console.log(index); // -> 2
