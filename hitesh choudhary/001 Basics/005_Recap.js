@@ -32,3 +32,6 @@ const fn = function () {
 // Reference:
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
+// Notes:
+// Primitive datatypes use stack memory
+// Reference (Non-primitive) datatypes use heap memory
