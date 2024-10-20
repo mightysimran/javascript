@@ -37,3 +37,31 @@ e={}
 // console.log(Object.entries(user)); 
 
 // console.log(user.hasOwnProperty('location')); // -> true
+
+// Object destructuring - feature in JavaScript that allows to extract properties from an object and assign them to variables in a more concise way. Instead of accessing each property individually, one can "destructure" the object in a single line.
+
+const course = {
+    name: "JavaScript",
+    price: "free",
+    courseInstructor: "Hitesh"
+}
+
+// console.log(course.courseInstructor);
+
+const { courseInstructor: instructor } = course
+console.log(instructor);
+
+// Note: json - JavaScript Object Notation
+
+{
+    
+}
+
+[
+  {},
+  {},
+  {}
+]
+
+// References:
+// https://api.github.com/users/mightysimran
