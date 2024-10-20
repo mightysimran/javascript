@@ -27,3 +27,24 @@ function fn(name = "anon"){
 }
 
 // console.log(fn("mightysimran"))
+
+function calc(...args){
+    return args;
+}
+// console.log(calc(1,2,3)) // -> [1, 2, 3]
+
+const gps = {
+    location: "The Himalayas"
+}
+function handleO(gps){
+    console.log(`Location: ${gps.location}`);
+}
+handleO(gps)
+
+const arr = [1,2,3,4,5]
+
+function return_first(arr){
+    return arr[0]
+}
+// console.log(return_first(arr));
+// console.log(return_first([1,2,3]));
