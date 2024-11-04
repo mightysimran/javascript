@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <div id="f" class="header">Header</div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    Password: <input type="password" name="" id="" />
+    <ul>
+      <li class="node">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptate
+        officia sed ipsam. Exercitationem non nihil doloribus. Neque,
+        temporibus! Odio magni error, veniam facere quisquam dolor autem
+        voluptas consequuntur ducimus.
+      </li>
+      <li class="node">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptate
+        officia sed ipsam. Exercitationem non nihil doloribus. Neque,
+        temporibus! Odio magni error, veniam facere quisquam dolor autem
+        voluptas consequuntur ducimus.
+      </li>
+      <li class="node">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptate
+        officia sed ipsam. Exercitationem non nihil doloribus. Neque,
+        temporibus! Odio magni error, veniam facere quisquam dolor autem
+        voluptas consequuntur ducimus.
+      </li>
+    </ul>
+    <script>
+      // console.log("Hello, world.");
+
+      // document.getElementById();
+      // document.getElementsByClassName();
+
+      console.log(document.getElementById("f").class); // -> undefined
+      console.log(document.getElementById("f").className); // -> header
+
+      console.log(document.getElementById("f").getAttribute("id"));
+      console.log(document.getElementById("f").getAttribute("class"));
+
+      document.getElementById("f").setAttribute("class", "paragraph");
+
+      let label = document.getElementById("f");
+      console.log(label); // -> <div id="f" class="paragraph">
+
+      label.style.fontWeight = "bold";
+      label.style.fontSize = "2em";
+
+      console.log(label.textContent); // Retrieves all the text content of an element, including text within hidden elements.
+
+      console.log(label.innerText); // Retrieves only the visible text content of an element, excludes text within hidden elements (display: none or visibility: hidden).
+
+      console.log(label.innerHTML); // Retrieves tags and structure, allows dynamic updates to the content.
+
+      // document.querySelector();
+      // document.querySelectorAll();
+
+      console.log(document.querySelector("p"));
+      console.log(document.querySelector("input[type='password']"));
+
+      // Note: HTMLCollection and NodeList are diff from pure arrays.
+
+      console.log(document.querySelectorAll("p")); // -> NodeList
+
+      let paragraphs = document.querySelectorAll("p");
+
+      // paragraphs.style.color = "red"; // -> Error
+      paragraphs[0].style.color = "red";
+
+      // forEach can be used with NodeList
+      paragraphs.forEach(function (p) {
+        p.style.fontWeight = "bold";
+      });
+
+      var pts = document.getElementsByClassName("node");
+
+      // pts.forEach(function () {}); // -> Error
+
+      console.log(pts); // -> HTMLCollection
+
+      const arr = Array.from(pts);
+      console.log(arr); // -> Array
+    </script>
+  </body>
+</html>
