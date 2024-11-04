@@ -5,10 +5,10 @@ const myArr2 = new Array(1, 2, 3, 4, 5)
 
 // Array methods
 
-// myArr.push(6) // -> adds to the end
-// myArr.pop() // -> deletes last element of arr
+// myArr.push(6) // adds to the end
+// myArr.pop() // deletes last element of arr
 
-// myArr.unshift(0) // -> adds to the beginning
+// myArr.unshift(0) // adds to the beginning
 // myArr.shift() // deletes first element of arr
 
 // console.log(myArr.includes(25)); // -> false
