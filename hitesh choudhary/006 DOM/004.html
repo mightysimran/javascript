@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body style="background-color: #252525; color: #fff">
+    <ul class="lang">
+      <li>Solidity</li>
+    </ul>
+  </body>
+  <script>
+    function add(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`;
+      document.querySelector(".lang").appendChild(li);
+    }
+    add("C++");
+    add("Python");
+
+    function optmzAdd(langName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".lang").appendChild(li);
+    }
+    optmzAdd("Golang");
+
+    // Edit
+    const secondlang = document.querySelector("li:nth-child(2)");
+    console.log(secondlang);
+
+    // secondlang.innerHTML = "Kotlin";
+
+    const li = document.createElement("li");
+    li.textContent = "Kotlin";
+    secondlang.replaceWith(li);
+
+    const firstlang = document.querySelector("li:first-child");
+    firstlang.outerHTML = "<li>JavaScript</li>"; // -> Not recommended
+
+    // Remove
+    const lastlang = document.querySelector("li:last-child");
+    lastlang.remove();
+  </script>
+</html>
